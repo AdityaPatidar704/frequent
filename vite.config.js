@@ -5,6 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/fT/', // <-- Add this
+  base: '/frequent/', // <-- Add this
   plugins: [react(), tailwindcss()],
 })

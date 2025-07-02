@@ -16,7 +16,7 @@ function App() {
     localStorage.setItem('jwt',isAuthenticated);
   },[isAuthenticated])
   return (
-        <BrowserRouter>
+        <BrowserRouter basename='/frequent'>
         <Routes>
           <Route path='/' element={<LandingPage/>}></Route>
           <Route path='/admin' element={<ProtectedRoute isAuthenticated={isAuthenticated} element={<AdminContent/>}/>}></Route>
